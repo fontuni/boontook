@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "BoonTook Ultra";
+  src: url(../woff2/BoonTook-Ultra.woff2) format("woff2"),
+       url(../woff/BoonTook-Ultra.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BoonTook Mon Ultra";
+  src: url(../woff2/BoonTook-Mon-Ultra-Oblique.woff2) format("woff2"),
+       url(../woff/BoonTook-Mon-Ultra-Oblique.woff) format("woff");
+  font-weight: normal;
+  font-style: oblique;
+}
+@font-face {
+  font-family: "BoonTook Ultra";
+  src: url(../woff2/BoonTook-Ultra-Oblique.woff2) format("woff2"),
+       url(../woff/BoonTook-Ultra-Oblique.woff) format("woff");
+  font-weight: normal;
+  font-style: oblique;
+}
+@font-face {
+  font-family: "BoonTook Mon Ultra";
+  src: url(../woff2/BoonTook-Mon-Ultra.woff2) format("woff2"),
+       url(../woff/BoonTook-Mon-Ultra.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}

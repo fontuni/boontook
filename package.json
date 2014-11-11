@@ -1,0 +1,14 @@
+{
+  "name": "boontook-fonts",
+  "version": "1.0.0",
+  "description": "BoonTook typeface precompiled package.",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^1.6.5",
+    "gulp": "^3.8.10"
+  },
+  "authors": [
+    "Sungsit Sawaiwan <gibbozer@gmail.com>"
+  ],
+  "license": "OFL-1.1"
+}

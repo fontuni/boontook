@@ -1,0 +1,29 @@
+{
+  "name": "boontook-fonts",
+  "version": "1.0.0",
+  "description": "BoonTook typeface precompiled package.",
+  "main": "index.html",
+  "keywords": [
+    "font",
+    "web font",
+    "thai",
+    "typography"
+  ],
+  "license": "OFL-1.1",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {},
+  "homepage": "http://boonuni.com",
+    "authors": [
+    "Sungsit Sawaiwan <gibbozer@gmail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/BoonUni/boontook-fonts.git"
+  }
+}
