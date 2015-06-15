@@ -1,6 +1,8 @@
 # BoonTook Typeface
 
-Copyright  (c) 2014, สังศิต ไสววรรณ (sungsit.com | https://twitter.com/gzix), พร้อมสงวนชื่อตระกูลฟอนต์ "บุญถึก" และ "BoonTook" ฟอนต์นี้ใช้สัญญาอนุญาตแบบ SIL Open Font License, Version 1.1 คุณสามารถอ่านรายละเอียดของสัญญาอนุญาตได้จากไฟล์ OFL-1.1.txt ในแพคเกจ หรือที่ <http://scripts.sil.org/OFL>
+Copyright 2014, สังศิต ไสววรรณ (sungsit.com | https://twitter.com/gzix). 
+
+ฟอนต์นี้ใช้สัญญาอนุญาตแบบ SIL Open Font License, Version 1.1 คุณสามารถอ่านรายละเอียดของสัญญาอนุญาตได้จากไฟล์ OFL.txt ในแพคเกจ หรือที่ <http://scripts.sil.org/OFL>
 
 อ่านเบื้องหลังการพัฒนาฟอนต์ได้ที่ <http://www.f0nt.com/forum/index.php/topic,21990.0.html>
 
@@ -20,5 +22,5 @@ Then see sample stylesheets in css directory and include them to your html pages
 
 ## Font developers
 
-This package is a precompiled package of <https://github.com/sungsit/boontook>, you can get my source files and generating scripts there (not quite useful for the mement, though).
+This package is a precompiled package of <https://github.com/sungsit/boontook>, you can get my source files and generating scripts there (not quite useful for the moment, though).
 
