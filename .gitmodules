@@ -1,0 +1,3 @@
+[submodule "libraries/fontuni"]
+	path = libraries/fontuni
+	url = https://github.com/fontuni/fontuni.git
