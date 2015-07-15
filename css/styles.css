@@ -3,7 +3,7 @@
 @import url(fonts.css);
 
 body {
-  font-family: "BoonTook Ultra",sans-serif;
+  font-family: "BoonTook",sans-serif;
   font-size: 48px;
   line-height: 1.4em;
   color: #222;
@@ -62,19 +62,19 @@ strong, span {
   max-width: 880px;
 }
 .boontook-ultra {
-  font-family: "BoonTook Ultra";
+  font-family: "BoonTook";
   font-style: normal;
 }
 .boontook-ultra-oblique {
-  font-family: "BoonTook Ultra";
+  font-family: "BoonTook";
   font-style: oblique;
 }
 .boontook-mon-ultra {
-  font-family: "BoonTook Mon Ultra";
+  font-family: "BoonTook Mon";
   font-style: normal;
 }
 .boontook-mon-ultra-oblique {
-  font-family: "BoonTook Mon Ultra";
+  font-family: "BoonTook Mon";
   font-style: oblique;
 }
 
