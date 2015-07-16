@@ -26,7 +26,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1394017292
-ModificationTime: 1437039794
+ModificationTime: 1437042701
 PfmFamily: 33
 TTFWeight: 950
 TTFWidth: 5
@@ -363,10 +363,10 @@ Encoding: Custom
 UnicodeInterp: none
 NameList: Adobe Glyph List
 DisplaySize: -48
-DisplayLayer: 4
+DisplayLayer: 5
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 168 14 8
+WinInfo: 126 14 8
 BeginPrivate: 8
 BlueValues 23 [-20 0 600 620 840 860]
 OtherBlues 11 [-260 -240]
@@ -23420,7 +23420,7 @@ EndSplineSet
 Colour: ffff00
 EndChar
 
-StartChar: afii61664
+StartChar: uni200C
 Encoding: 184 8204 225
 Width: 0
 VWidth: 0
@@ -23428,7 +23428,7 @@ Flags: W
 LayerCount: 6
 EndChar
 
-StartChar: afii301
+StartChar: uni200D
 Encoding: 185 8205 226
 Width: 0
 VWidth: 0
@@ -25053,22 +25053,76 @@ Refer: 76 3663 S 1 0 0 1 0 0 2
 Layer: 2
 SplineSet
 145 960 m 5
- 345 960 l 5
- 295 690 l 5
- 195 690 l 5
+ 345 960 l 1
+ 295 690 l 1
+ 195 690 l 1
  145 960 l 5
-415 960 m 5
- 615 960 l 5
- 565 690 l 5
- 465 690 l 5
- 415 960 l 5
+415 960 m 1
+ 615 960 l 1
+ 565 690 l 1
+ 465 690 l 1
+ 415 960 l 1
+EndSplineSet
+Refer: 76 3663 N 1 0 0 1 0 0 2
+Layer: 3
+SplineSet
+180 960 m 2
+ 310 960 l 2
+ 326 960 340 946 340 930 c 2
+ 300 710 l 2
+ 296 698 290 690 279 690 c 2
+ 211 690 l 2
+ 200 690 194 698 190 710 c 2
+ 150 930 l 2
+ 150 946 164 960 180 960 c 2
+450 960 m 2
+ 580 960 l 2
+ 596 960 610 946 610 930 c 2
+ 570 710 l 2
+ 566 698 560 690 549 690 c 2
+ 481 690 l 2
+ 470 690 464 698 460 710 c 2
+ 420 930 l 2
+ 420 946 434 960 450 960 c 2
 EndSplineSet
 Refer: 76 3663 S 1 0 0 1 0 0 2
-Layer: 3
-Refer: 76 3663 N 1 0 0 1 0 0 2
 Layer: 4
+SplineSet
+237 960 m 1
+ 437 960 l 1
+ 344 690 l 1
+ 244 690 l 1
+ 237 960 l 1
+507 960 m 1
+ 707 960 l 1
+ 614 690 l 1
+ 514 690 l 1
+ 507 960 l 1
+EndSplineSet
 Refer: 76 3663 S 1 0 0 1 0 0 2
 Layer: 5
+SplineSet
+272 960 m 2
+ 402 960 l 2
+ 416 960 427 949 427 935 c 0
+ 427 933 427 932 427 930 c 2
+ 352 710 l 2
+ 346 698 339 690 328 690 c 2
+ 260 690 l 2
+ 249 690 244 698 242 710 c 2
+ 237 930 l 2
+ 240 946 256 960 272 960 c 2
+542 960 m 2
+ 672 960 l 2
+ 686 960 697 949 697 935 c 0
+ 697 933 697 932 697 930 c 2
+ 622 710 l 2
+ 616 698 609 690 598 690 c 2
+ 530 690 l 2
+ 519 690 514 698 512 710 c 2
+ 507 930 l 2
+ 510 946 526 960 542 960 c 2
+EndSplineSet
 Refer: 76 3663 S 1 0 0 1 0 0 2
 Colour: ff0000
 EndChar
