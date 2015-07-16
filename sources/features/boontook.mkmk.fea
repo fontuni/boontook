@@ -1,0 +1,66 @@
+#
+# Copyright (c) 2014-2015, Sungsit Sawaiwan (https://sungsit.com | gibbozer [at] gmail [dot] com).
+#
+# This Font Software is licensed under the SIL Open Font License, Version 1.1 (OFL).
+# You should have received a copy of the OFL License along with this file.
+# If not, see http://scripts.sil.org/OFL
+#
+
+include(boontook-classes.fea)
+
+lookup ThaiExtendedBelow.mkmk {
+
+  markClass [\uni0E38 \uni0E39 \uni0E3A ] <anchor 0 450> @ThaiExtendedBelow.mkmk;
+  
+  pos mark [\uni0E38 \uni0E39 ] <anchor 0 180> mark @ThaiExtendedBelow.mkmk;
+  pos mark [\uni0E3A ] <anchor 0 240> mark @ThaiExtendedBelow.mkmk;
+  pos mark [\uni0E38.sd \uni0E39.sd ] <anchor 0 0> mark @ThaiExtendedBelow.mkmk;
+  pos mark [\uni0E3A.sd ] <anchor 0 60> mark @ThaiExtendedBelow.mkmk;
+
+} ThaiExtendedBelow.mkmk;
+
+lookup ThaiExtendedAbove.mkmk {
+  lookupflag 0;
+  
+  # Normal
+  markClass @T <anchor 0 960> @ThaiExtendedAbove.mkmk;
+  
+  # Legacy
+  markClass [ \uni0E47.su \uni0E4D.su ] <anchor 0 960> @ThaiExtendedAbove.mkmk;
+  
+  # Normal
+  pos mark [\uni0E31 \uni0E34 \uni0E35 \uni0E36 \uni0E37 \uni0E4D ] <anchor 0 960> mark @ThaiExtendedAbove.mkmk;
+  pos mark [\uni0E47 ] <anchor -60 960> mark @ThaiExtendedAbove.mkmk;
+  pos mark @T <anchor 0 1230> mark @ThaiExtendedAbove.mkmk;
+
+  # Legacy
+  pos mark [ \uni0E47.su \uni0E4D.su ] <anchor 0 1230> mark @ThaiExtendedAbove.mkmk;
+  pos mark @T.sd <anchor 0 960> mark @ThaiExtendedAbove.mkmk;
+
+} ThaiExtendedAbove.mkmk;
+
+lookup ThaiExtendedAbove.left.mkmk {
+  lookupflag 0;
+  
+  # Normal
+  markClass @T.sl <anchor -180 960> @ThaiExtendedAbove.left.mkmk;
+  
+  # Legacy
+  markClass [ \uni0E47.sul \uni0E4D.sul ] <anchor -180 960> @ThaiExtendedAbove.left.mkmk;
+  
+  # Normal
+  pos mark [\uni0E31.sl \uni0E34.sl \uni0E35.sl \uni0E36.sl \uni0E37.sl \uni0E4D.sl ] <anchor -180 960> mark @ThaiExtendedAbove.left.mkmk;
+  pos mark [\uni0E47.sl ] <anchor -240 960> mark @ThaiExtendedAbove.left.mkmk;
+  pos mark @T.sl <anchor -180 1230> mark @ThaiExtendedAbove.left.mkmk;
+
+  # Legacy
+  pos mark [ \uni0E47.sul \uni0E4D.sul ] <anchor -180 1230> mark @ThaiExtendedAbove.left.mkmk;
+  pos mark @T.sdl <anchor -180 960> mark @ThaiExtendedAbove.left.mkmk;
+
+} ThaiExtendedAbove.left.mkmk;
+
+feature mkmk {
+  lookup ThaiExtendedBelow.mkmk;
+  lookup ThaiExtendedAbove.mkmk;
+  lookup ThaiExtendedAbove.left.mkmk;
+} mkmk;
