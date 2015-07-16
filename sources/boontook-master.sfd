@@ -3,7 +3,7 @@ FontName: BoonTook
 FullName: BoonTook
 FamilyName: BoonTook
 Weight: Ultra
-Copyright: Copyright (c) 2014, Sungsit Sawaiwan (http://sungsit.com | gibbozer [at] gmail [dot] com)
+Copyright: Copyright (c) 2014-2015, Sungsit Sawaiwan (http://sungsit.com | gibbozer [at] gmail [dot] com)
 Version: 2.0
 ItalicAngle: -9
 UnderlinePosition: -60
@@ -26,7 +26,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1394017292
-ModificationTime: 1437037419
+ModificationTime: 1437039794
 PfmFamily: 33
 TTFWeight: 950
 TTFWidth: 5
@@ -363,7 +363,7 @@ Encoding: Custom
 UnicodeInterp: none
 NameList: Adobe Glyph List
 DisplaySize: -48
-DisplayLayer: 5
+DisplayLayer: 4
 AntiAlias: 1
 FitToEm: 1
 WinInfo: 168 14 8
@@ -22198,9 +22198,9 @@ Layer: 2
 Refer: 65 3655 S 1 0 0 1 -260 0 2
 Validated: 1
 Layer: 3
-Refer: 65 3655 S 1 0 0 1 -260 0 2
+Refer: 65 3655 N 1 0 0 1 -260 0 2
 Layer: 4
-Refer: 65 3655 S 1 0 0 1 -260 0 2
+Refer: 65 3655 N 1 0 0 1 -260 0 2
 Layer: 5
 Refer: 65 3655 S 1 0 0 1 -260 0 2
 Colour: ffff00
@@ -26667,7 +26667,7 @@ StartChar: uni0E4D.sl
 Encoding: 244 63641 265
 Width: 0
 VWidth: 0
-Flags: HWO
+Flags: HW
 LayerCount: 6
 Fore
 Refer: 52 3661 S 1 0 0 1 -320 0 2
@@ -26824,21 +26824,74 @@ SplineSet
 EndSplineSet
 Layer: 3
 SplineSet
--420 1075 m 4
- -420 1153 -362 1200 -275 1200 c 6
- -50 1200 l 5
- -50 1105 l 5
- -245 1105 l 6
- -270 1105 -285 1095 -285 1075 c 4
- -285 1055 -270 1045 -245 1045 c 4
- -211 1045 -195 1058 -195 1080 c 5
- -90 1080 l 5
- -40 970 l 5
- -40 960 l 5
- -150 960 l 5
+-200 1061 m 4
+ -192 1074 -187 1080 -175 1080 c 6
+ -110 1080 l 6
+ -92 1080 -88 1075 -83 1064 c 6
+ -45 980 l 6
+ -44 976 -43 973 -43 970 c 4
+ -43 964 -47 960 -55 960 c 6
+ -130 960 l 6
+ -143 960 -152 964 -156 976 c 6
  -168 1008 l 5
  -187 979 -221 951 -275 950 c 4
  -362 950 -420 997 -420 1075 c 4
+ -420 1153 -362 1200 -275 1200 c 6
+ -80 1200 l 6
+ -64 1200 -50 1186 -50 1170 c 6
+ -50 1135 l 6
+ -50 1119 -64 1105 -80 1105 c 6
+ -245 1105 l 6
+ -270 1105 -285 1095 -285 1075 c 4
+ -285 1055 -270 1045 -245 1045 c 4
+ -222 1045 -207 1050 -200 1061 c 4
+EndSplineSet
+Layer: 4
+SplineSet
+-310 1075 m 0
+ -298 1153 -232 1200 -145 1200 c 2
+ 80 1200 l 1
+ 65 1105 l 1
+ -130 1105 l 2
+ -155 1105 -172 1095 -175 1075 c 0
+ -175 1073 -175 1072 -175 1070 c 0
+ -175 1053 -162 1045 -139 1045 c 0
+ -105 1045 -87 1058 -84 1080 c 1
+ 21 1080 l 1
+ 54 970 l 1
+ 52 960 l 1
+ -58 960 l 1
+ -68 1008 l 1
+ -92 979 -131 951 -185 950 c 0
+ -263 950 -312 988 -312 1053 c 0
+ -312 1060 -311 1067 -310 1075 c 0
+EndSplineSet
+Layer: 5
+SplineSet
+-92 1061 m 4
+ -82 1074 -76 1080 -64 1080 c 6
+ 1 1080 l 6
+ 19 1080 23 1075 26 1064 c 6
+ 50 980 l 6
+ 50 976 51 973 51 970 c 4
+ 50 964 45 960 37 960 c 6
+ -38 960 l 6
+ -51 960 -59 964 -61 976 c 6
+ -68 1008 l 5
+ -92 979 -131 951 -185 950 c 4
+ -263 950 -312 988 -312 1053 c 4
+ -312 1060 -311 1067 -310 1075 c 4
+ -298 1153 -232 1200 -145 1200 c 6
+ 50 1200 l 6
+ 64 1200 75 1189 75 1175 c 4
+ 75 1173 75 1172 75 1170 c 6
+ 70 1135 l 6
+ 67 1119 51 1105 35 1105 c 6
+ -130 1105 l 6
+ -155 1105 -172 1095 -175 1075 c 4
+ -175 1073 -175 1072 -175 1070 c 4
+ -175 1053 -162 1045 -139 1045 c 4
+ -116 1045 -101 1050 -92 1061 c 4
 EndSplineSet
 Colour: ff0000
 EndChar
@@ -26852,8 +26905,12 @@ LayerCount: 6
 Fore
 Refer: 268 63650 S 1 0 0 1 -270 0 2
 Layer: 2
-Refer: 268 63650 S 1 0 0 1 -270 0 2
+Refer: 268 63650 N 1 0 0 1 -270 0 2
 Layer: 3
+Refer: 268 63650 S 1 0 0 1 -270 0 2
+Layer: 4
+Refer: 268 63650 S 1 0 0 1 -270 0 2
+Layer: 5
 Refer: 268 63650 S 1 0 0 1 -270 0 2
 Colour: ff0000
 EndChar
