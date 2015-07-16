@@ -25,3 +25,4 @@ tests
 # FontForge
 *.sfd-*
 *.svg
+*bak*
