@@ -26,7 +26,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1394017292
-ModificationTime: 1437042701
+ModificationTime: 1437044582
 PfmFamily: 33
 TTFWeight: 950
 TTFWidth: 5
@@ -363,10 +363,10 @@ Encoding: Custom
 UnicodeInterp: none
 NameList: Adobe Glyph List
 DisplaySize: -48
-DisplayLayer: 5
+DisplayLayer: 2
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 126 14 8
+WinInfo: 168 14 8
 BeginPrivate: 8
 BlueValues 23 [-20 0 600 620 840 860]
 OtherBlues 11 [-260 -240]
@@ -21643,22 +21643,94 @@ StartChar: .notdef
 Encoding: 269 -1 194
 Width: 720
 VWidth: 0
-Flags: W
+Flags: HW
 HStem: -20 60<330 390> 270 60<40 100 620 680> 560 60<330 390> 587 20<217.174 273.364 446.636 502.826>
 VStem: 40 60<270 330> 330 60<-20 40 560 620> 620 60<270 330>
 CounterMasks: 1 0e
 LayerCount: 6
+Back
+SplineSet
+150 570 m 29
+ 570 570 l 29
+ 570 30 l 29
+ 150 30 l 29
+ 150 570 l 29
+EndSplineSet
 Fore
-Refer: 228 9676 S 1 0 0 1 0 0 2
+SplineSet
+195 540 m 1
+ 195 60 l 1
+ 525 60 l 1
+ 525 540 l 1
+ 195 540 l 1
+105 600 m 1
+ 615 600 l 5
+ 615 0 l 1
+ 105 0 l 1
+ 105 600 l 1
+EndSplineSet
 Layer: 2
-Refer: 228 9676 S 1 0 0 1 0 0 2
-Validated: 1
+SplineSet
+195 540 m 5
+ 195 60 l 5
+ 525 60 l 5
+ 525 540 l 5
+ 195 540 l 5
+105 600 m 5
+ 615 600 l 5
+ 615 0 l 5
+ 105 0 l 5
+ 105 600 l 5
+EndSplineSet
 Layer: 3
-Refer: 228 9676 S 1 0 0 1 0 0 2
+SplineSet
+195 540 m 5
+ 195 60 l 5
+ 525 60 l 5
+ 525 540 l 5
+ 195 540 l 5
+150 600 m 6
+ 570 600 l 4
+ 597 600 615 583 615 570 c 4
+ 615 30 l 4
+ 615 12 589 0 570 0 c 4
+ 150 0 l 4
+ 123 0 105 17 105 30 c 4
+ 105 570 l 4
+ 105 588 131 600 150 600 c 6
+EndSplineSet
 Layer: 4
-Refer: 228 9676 S 1 0 0 1 0 0 2
+SplineSet
+221 540 m 5
+ 145 60 l 5
+ 475 60 l 5
+ 551 540 l 5
+ 221 540 l 5
+140 600 m 5
+ 650 600 l 5
+ 555 0 l 5
+ 45 0 l 5
+ 140 600 l 5
+EndSplineSet
 Layer: 5
-Refer: 228 9676 S 1 0 0 1 0 0 2
+SplineSet
+221 540 m 5
+ 145 60 l 5
+ 475 60 l 5
+ 551 540 l 5
+ 221 540 l 5
+185 600 m 6
+ 605 600 l 4
+ 630 600 645 585 645 572 c 4
+ 645 571 645 571 645 570 c 4
+ 560 30 l 4
+ 557 12 529 0 510 0 c 4
+ 90 0 l 4
+ 65 0 50 15 50 28 c 4
+ 50 29 50 29 50 30 c 4
+ 135 570 l 4
+ 138 588 166 600 185 600 c 6
+EndSplineSet
 Colour: ff0000
 EndChar
 
