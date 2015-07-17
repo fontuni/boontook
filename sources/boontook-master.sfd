@@ -17,16 +17,16 @@ woffMetadata: "<?xml version+AD0AIgAA-1.0+ACIA encoding+AD0AIgAA-UTF-8+ACIA?>+AA
 LayerCount: 6
 Layer: 0 0 "Back" 1
 Layer: 1 0 "Fore" 0
-Layer: 2 0 "Ultra" 0
-Layer: 3 0 "Mon Ultra" 0
-Layer: 4 0 "Ultra Oblique" 0
-Layer: 5 0 "Mon Ultra Oblique" 0
+Layer: 2 0 "Normal" 0
+Layer: 3 0 "Mon" 0
+Layer: 4 0 "Normal Oblique" 0
+Layer: 5 0 "Mon Oblique" 0
 FSType: 8
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1394017292
-ModificationTime: 1437057430
+ModificationTime: 1437113113
 PfmFamily: 33
 TTFWeight: 950
 TTFWidth: 5
@@ -25540,7 +25540,7 @@ StartChar: uni0E4E.sl
 Encoding: 63652 63652 275
 Width: 0
 VWidth: 0
-Flags: HWO
+Flags: HW
 LayerCount: 6
 Fore
 Refer: 75 3662 S 1 0 0 1 -210 0 2
