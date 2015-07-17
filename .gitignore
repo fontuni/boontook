@@ -26,5 +26,5 @@ tests
 *.sfd-*
 *.svg
 *bak*
-sources/*.ttf
+sources/*.*tf
 *temp*

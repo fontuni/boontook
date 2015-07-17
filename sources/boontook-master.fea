@@ -22,6 +22,7 @@ include(features/boontook-core.fea)
 include(features/boontook.ccmp.fea)
 include(features/boontook-extra.fea)
 
+include(features/boontook-latin-1-core.fea)
 include(features/boontook-latin-extra.fea)
 
 # GPOS
