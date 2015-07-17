@@ -6,6 +6,8 @@
 # If not, see http://scripts.sil.org/OFL
 #
 
+include(boontook-classes.fea)
+
 # These are optional required features for Thai fonts.
 
 lookup Thai.liga {
@@ -36,3 +38,7 @@ feature calt {
 feature dlig {
   lookup Thai.extra;
 } dlig;
+
+lookup Thai.ss02 {
+  sub @NC.semi by @NC.swap ;
+} Thai.ss02;

@@ -22,7 +22,11 @@ include(features/boontook-core.fea)
 include(features/boontook.ccmp.fea)
 include(features/boontook-extra.fea)
 
+include(features/boontook-latin-extra.fea)
+
 # GPOS
 include(features/boontook.kern.fea)
 include(features/boontook.mark.fea)
 include(features/boontook.mkmk.fea)
+
+include(features/boontook-latin.kern.fea)

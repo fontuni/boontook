@@ -18,7 +18,7 @@ version = '2.0-alpha1'
 source = 'sources/boontook-master.sfd'
 weights = [950]
 layers = ['Normal', 'Normal Oblique', 'Mon', 'Mon Oblique']
-copyright =  'Copyright (c) 2014-2015, Sungsit Sawaiwan (https://sungsit.com | gibbozer [at] gmail [dot] com). This Font Software is licensed under the SIL Open Font License, Version 1.1 (http://scripts.sil.org/OFL).'
+copyright =  'Copyright 2014-2015, Sungsit Sawaiwan (https://fontuni.com | uni@fontuni.com). This Font Software is licensed under the SIL Open Font License, Version 1.1 (http://scripts.sil.org/OFL).'
 features = ['boontook-master']
 feature_dir = 'sources/'
 build_dir = 'fonts/'
@@ -65,6 +65,7 @@ def buildFont(source,family):
   font.os2_weight = weight
   font.version = version
   font.copyright = copyright
+  font.save()
 
   for feature in features:
     font.mergeFeature(feature_dir + feature + '.fea')
