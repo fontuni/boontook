@@ -9,14 +9,12 @@
 include(boontook-classes.fea)
 
 lookup ThaiExtendedBelow.mkmk {
-
-  markClass [\uni0E38 \uni0E39 \uni0E3A ] <anchor 0 450> @ThaiExtendedBelow.mkmk;
-  
-  pos mark [\uni0E38 \uni0E39 ] <anchor 0 180> mark @ThaiExtendedBelow.mkmk;
-  pos mark [\uni0E3A ] <anchor 0 240> mark @ThaiExtendedBelow.mkmk;
-  pos mark [\uni0E38.sd \uni0E39.sd ] <anchor 0 0> mark @ThaiExtendedBelow.mkmk;
-  pos mark [\uni0E3A.sd ] <anchor 0 60> mark @ThaiExtendedBelow.mkmk;
-
+  lookupflag 0;
+  markClass [\uni0E38 \uni0E39 \uni0E3A ] <anchor 0 0> @ThaiExtendedBelow.mkmk;
+  pos mark [\uni0E38 \uni0E39 ] <anchor 0 -280> mark @ThaiExtendedBelow.mkmk;
+  pos mark [\uni0E3A ] <anchor 0 -210> mark @ThaiExtendedBelow.mkmk;
+  pos mark [\uni0E38.sd \uni0E39.sd ] <anchor 0 -490> mark @ThaiExtendedBelow.mkmk;
+  pos mark [\uni0E3A.sd ] <anchor 0 -420> mark @ThaiExtendedBelow.mkmk;
 } ThaiExtendedBelow.mkmk;
 
 lookup ThaiExtendedAbove.mkmk {

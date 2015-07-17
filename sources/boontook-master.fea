@@ -23,6 +23,6 @@ include(features/boontook.ccmp.fea)
 include(features/boontook-extra.fea)
 
 # GPOS
-#include(features/boontook.kern.fea)
-#include(features/boontook.mark.fea)
-#include(features/boontook.mkmk.fea)
+include(features/boontook.kern.fea)
+include(features/boontook.mark.fea)
+include(features/boontook.mkmk.fea)
