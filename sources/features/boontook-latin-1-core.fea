@@ -170,7 +170,7 @@ lookup LatinBelow.mark {
   pos base [ @O.base @O.abv ] <anchor 415 0> mark @LatinBelow.mark;
   pos base [ \Q ] <anchor 360 0> mark @LatinBelow.mark;
   pos base [ \R ] <anchor 400 0> mark @LatinBelow.mark;
-  pos base [ \S ] <anchor 370 0> mark @LatinBelow.mark;
+  pos base [ \S ] <anchor 420 0> mark @LatinBelow.mark;
   pos base [ \T ] <anchor 360 0> mark @LatinBelow.mark;
   pos base [ \V ] <anchor 405 0> mark @LatinBelow.mark;
   pos base [ \W ] <anchor 550 0> mark @LatinBelow.mark;
@@ -193,8 +193,8 @@ lookup LatinBelow.mark {
   pos base [ \m ] <anchor 510 0> mark @LatinBelow.mark;
 
   pos base [ \r ] <anchor 210 0> mark @LatinBelow.mark;
-  pos base [ \s ] <anchor 290 0> mark @LatinBelow.mark;
-  pos base [ \t ] <anchor 270 0> mark @LatinBelow.mark;
+  pos base [ \s ] <anchor 330 0> mark @LatinBelow.mark;
+  pos base [ \t ] <anchor 300 0> mark @LatinBelow.mark;
   pos base [ \v ] <anchor 315 0> mark @LatinBelow.mark;
   pos base [ \w ] <anchor 420 0> mark @LatinBelow.mark;
   pos base [ \x \z ] <anchor 300 0> mark @LatinBelow.mark;
