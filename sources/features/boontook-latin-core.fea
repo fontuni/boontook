@@ -205,11 +205,12 @@ lookup LatinBelow.mark {
   pos base [ \z ] <anchor 340 0> mark @LatinBelow.mark;
 
   pos base [ \j \p \uni0237 \thorn ] <anchor 200 -240> mark @LatinBelow.mark;
-  pos base [ \g \uni0261 ] <anchor 330 -240> mark @LatinBelow.mark;
+  pos base [ \g ] <anchor 330 -240> mark @LatinBelow.mark;
+  pos base [ \uni0261 ] <anchor 420 -240> mark @LatinBelow.mark;
   pos base [ \q ] <anchor 600 -240> mark @LatinBelow.mark;
   pos base [ \y @y.abv ] <anchor 315 -240> mark @LatinBelow.mark;
 
-  pos base [ \ae ] <anchor 470> mark @LatinBelow.mark;
+  pos base [ \ae ] <anchor 470 0> mark @LatinBelow.mark;
   pos base [ \oe ] <anchor 510 0> mark @LatinBelow.mark;
   pos base [ \germandbls ] <anchor 420 0> mark @LatinBelow.mark;
   pos base [ \eth ] <anchor 380 0> mark @LatinBelow.mark;
@@ -240,7 +241,7 @@ lookup LatinOgonek.mark {
   pos base [ \O ] <anchor 510 0> mark @LatinOgonek.mark;
   pos base [ \U ] <anchor 480 0> mark @LatinOgonek.mark;
 
-  pos base [ \a \u ] <anchor 600 0> mark @LatinOgonek.mark;
+  pos base [ \a \u \uni0251 ] <anchor 600 0> mark @LatinOgonek.mark;
   pos base [ \e \o ] <anchor 420 0> mark @LatinOgonek.mark;
   pos base [ \i \dotlessi ] <anchor 240 0> mark @LatinOgonek.mark;
 
@@ -255,12 +256,12 @@ feature mark {
 
 lookup LatinAbove.mkmk {
   markClass @COMB.abv <anchor 0 0> @LatinAbove.mkmk;
-  pos mark @COMB.abv <anchor 0 180> mark @LatinAbove.mkmk;
+  pos mark @COMB.abv <anchor 0 210> mark @LatinAbove.mkmk;
 } LatinAbove.mkmk;
 
 lookup LatinBelow.mkmk {
   markClass @COMB.blw <anchor 0 0> @LatinBelow.mkmk;
-  pos mark @COMB.blw <anchor 0 -180> mark @LatinBelow.mkmk;
+  pos mark @COMB.blw <anchor 0 -210> mark @LatinBelow.mkmk;
 } LatinBelow.mkmk;
 
 feature mkmk {

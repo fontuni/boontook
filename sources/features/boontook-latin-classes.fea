@@ -134,10 +134,10 @@
 @f = [ \f @f.blw ];
 
 @G.abv = [ \Gcircumflex \Gbreve \Gdotaccent \Gcaron \uni1E20 ];
-@G.blw = [ \uni0122 ];
+@G.blw = [ \Gcommaaccent ];
 @G = [ \G @G.abv @G.blw ];
 
-@g.abv = [ \gcircumflex \gbreve \gdotaccent \uni0123 \gcaron \uni1E21 ];
+@g.abv = [ \gcircumflex \gbreve \gdotaccent \gcommaaccent \gcaron \uni1E21 ];
 @g = [ \g @g.abv ];
 
 @H.base = [ \H \Hbar ];
