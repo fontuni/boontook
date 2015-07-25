@@ -26,7 +26,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1394017292
-ModificationTime: 1437827965
+ModificationTime: 1437830957
 PfmFamily: 33
 TTFWeight: 950
 TTFWidth: 5
@@ -61,7 +61,7 @@ DisplaySize: -48
 DisplayLayer: 2
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 280 14 8
+WinInfo: 686 14 8
 BeginPrivate: 8
 BlueValues 23 [-20 0 600 620 840 860]
 OtherBlues 11 [-260 -240]
@@ -25466,7 +25466,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: mu
+StartChar: uni00B5
 Encoding: 181 181 296
 Width: 785
 Flags: W
