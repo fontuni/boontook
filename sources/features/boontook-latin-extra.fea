@@ -18,6 +18,8 @@ lookup Latin.ss20 {
   sub [ \a \g ] by [ \uni0251 \uni0261 ] ;
 } Latin.ss20;
 
+# a,g alt decomposed
+
 feature ss18 {
   lookup Latin.ss18;
 } ss18;
