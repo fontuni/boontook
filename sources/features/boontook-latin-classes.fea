@@ -54,7 +54,7 @@
 
 @i.abv = [ \i \igrave \iacute \icircumflex \idieresis \iogonek \itilde \imacron \uni01D0 \uni1EC9 ];
 @i.blw = [ \iogonek \uni1ECB ];
-@i = [ \dotlessi @i.abv ];
+@i = [ \dotlessi @i.abv @i.blw];
 
 @O.base = [ \O \Oslash ];
 @O.abv = [ \Ograve \Oacute \Ocircumflex \Otilde \Odieresis \Omacron \Ohungarumlaut \uni01D1 \uni1ECE ];

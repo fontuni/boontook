@@ -126,6 +126,7 @@ feature dnom {
   lookup Latin.dnom;
 } dnom;
 
+# fractions
 lookup LatinSlash.frac {
   sub \slash by \fraction;
 } LatinSlash.frac;

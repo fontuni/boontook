@@ -47,24 +47,6 @@ feature liga {
   lookup Latin.liga;
 } liga;
 
-# fractions
-lookup LatinSlash.frac {
-  sub \slash by \fraction;
-} LatinSlash.frac;
-
-lookup Latin.frac {
-
-  sub \one \fraction \four by \onequarter;
-  sub \one \fraction \two by \onehalf;
-  sub \three \fraction \four by \threequarters;
-
-} Latin.frac;
-
-feature frac {
-  lookup LatinSlash.frac;
-  lookup Latin.frac;
-} frac;
-
 # GPOS
 lookup LatinAbove.mark {
   lookupflag 0;
@@ -236,7 +218,7 @@ lookup LatinOgonek.mark {
   markClass [ \uni0328 ] <anchor 0 0> @LatinOgonek.mark;
 
   pos base [ \A ] <anchor 840 0> mark @LatinOgonek.mark;
-  pos base [ \E ] <anchor 630 0> mark @LatinOgonek.mark;
+  pos base [ \E ] <anchor 600 0> mark @LatinOgonek.mark;
   pos base [ \I ] <anchor 240 0> mark @LatinOgonek.mark;
   pos base [ \O ] <anchor 510 0> mark @LatinOgonek.mark;
   pos base [ \U ] <anchor 480 0> mark @LatinOgonek.mark;
