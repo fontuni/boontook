@@ -1,0 +1,38 @@
+languagesystem DFLT dflt;
+languagesystem thai dflt;
+languagesystem thai PAL ;
+languagesystem thai SAN ;
+
+#
+# Copyright (c) 2014-2015, Sungsit Sawaiwan (https://sungsit.com | gibbozer [at] gmail [dot] com).
+#
+# This Font Software is licensed under the SIL Open Font License, Version 1.1 (OFL).
+# You should have received a copy of the OFL License along with this file.
+# If not, see http://scripts.sil.org/OFL
+#
+
+# Do not reorder these included files unless you know what you do.
+
+
+# GDEF (classes)
+include(features/boontook-classes.fea)
+
+# GSUB
+include(features/boontook-core.fea)
+include(features/boontook.ccmp.fea)
+include(features/boontook-extra.fea)
+
+include(features/boontook-latin-core.fea)
+include(features/boontook-latin-extra.fea)
+
+# GPOS
+
+# Thai
+include(features/boontook.kern.fea)
+include(features/boontook.mark.fea)
+include(features/boontook.mkmk.fea)
+
+# Latin
+include(features/boontook-latin-normal.mark.fea)
+include(features/boontook-latin-normal.mkmk.fea)
+include(features/boontook-latin.kern.fea)
