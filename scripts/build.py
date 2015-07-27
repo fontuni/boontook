@@ -19,7 +19,7 @@ source = 'sources/boontook-master.sfd'
 weights = [950]
 layers = ['Normal', 'Normal Oblique', 'Mon', 'Mon Oblique']
 copyright =  'Copyright 2014-2015, Sungsit Sawaiwan (https://fontuni.com | uni@fontuni.com). This Font Software is licensed under the SIL Open Font License, Version 1.1 (http://scripts.sil.org/OFL).'
-features = ['boontook-master']
+features = ['boontook-normal', 'boontook-oblique']
 feature_dir = 'sources/'
 build_dir = 'fonts/'
 unhinted_dir = 'fonts/unhinted/'
@@ -59,6 +59,8 @@ def ttf2Woff(ttf,woff,genflags):
   font.close()
 
 def buildFont(source,family):
+
+  # prepare master
   font = fontforge.open(source)
   font.familyname = family
   font.weight = str(weight)
@@ -67,13 +69,13 @@ def buildFont(source,family):
   font.copyright = copyright
   font.save()
 
-  for feature in features:
-    font.mergeFeature(feature_dir + feature + '.fea')
-
+  # loop through each layer & save it as sfd files
+  # then generate ttf, autohint & make woff + woff2
   for layer in layers:
+
     layername = font.layers[layer].name
     subfamily = ''
-    font.italicangle = 0
+    font.italicangle = 0.0
 
     if layername.startswith('Mon'):
       subfamily += '-Mon'
@@ -81,22 +83,45 @@ def buildFont(source,family):
     if layername.endswith('Oblique'):
       subfamily += '-Oblique'
       font.italicangle = -9.0
-      
+
     font.fontname = family + subfamily
     font.fullname = font.fontname.replace('-',' ')
 
+    tempsfd = 'sources/'+ font.fontname +'-temp.sfd'
+    font.save(tempsfd)
+
+    temp = fontforge.open(tempsfd)
+
+    if temp.fullname.endswith('Oblique'):
+      temp.mergeFeature(feature_dir + features[1] + '.fea')
+    else:
+      temp.mergeFeature(feature_dir + features[0] + '.fea')
+
     genflags  = ('opentype', 'PfEd-lookups', 'no-hints')
     ttfunhinted = unhinted_dir + font.fontname + '-unhinted.ttf'
-    font.generate(ttfunhinted, flags=genflags, layer = layername)
+
+    # generate unhinted ttf
+    temp.generate(ttfunhinted, flags=genflags, layer = layername)
+    print(font.fullname, 'TTF instance generated.')
+
+    temp.close()
+    subprocess.call(['rm',tempsfd])
 
     ttf = build_dir + font.fontname + '.ttf'
     woff = build_dir + font.fontname + '.woff'
 
+    # ttfautohint
     ttfHint(ttfunhinted,ttf)
     printFontInfo(ttf)
+    print(font.fullname, 'TTF autohinted.')
 
+    # hinted ttf to woff
     ttf2Woff(ttf,woff,genflags)
+    print(font.fullname, 'WOFF instance generated.')
+
+    # hinted ttf to woff2
     subprocess.call(['woff2_compress',ttf])
+    print(font.fullname, 'WOFF2 instance generated.')
 
   font.save('sources/boontook-master-temp.sfd')
   font.close()
