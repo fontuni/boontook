@@ -8,7 +8,7 @@
 
 lookup Thai.kern {
   lookupflag 0;
-    pos [\uni0E54 \uni0E55 ] [\uni0E50 \uni0E51 \uni0E53 \uni0E54 \uni0E55 \uni0E57 \uni0E58 \uni0E59 ] -30;
+    pos [ \uni0E54 \uni0E55 ] [ \uni0E50 \uni0E51 \uni0E53 \uni0E54 \uni0E55 \uni0E57 \uni0E58 \uni0E59 ] -30;
 } Thai.kern;
 
 feature kern {

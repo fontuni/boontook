@@ -6,6 +6,8 @@
 # If not, see http://scripts.sil.org/OFL
 #
 
+include(latin-classes.fea)
+
 lookup Latin.ss18 {
   sub \g by \uni0261 ;
 } Latin.ss18;

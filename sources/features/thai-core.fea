@@ -8,7 +8,7 @@
 
 # Shared functionalities for Thai shaping
 
-include(boontook-classes.fea)
+include(thai-classes.fea)
 
 # Remove descender
 lookup ThaiRC.rd {
@@ -94,3 +94,88 @@ feature ss01 {
     language dflt ;
       lookup ThaiRC.rd;
 } ss01;
+
+# Basic subsitutions
+
+lookup Thai.sd {
+  sub @T by @T.sd;
+} Thai.sd;
+
+lookup ThaiBV.sd {
+  sub @BV by @BV.sd;
+} ThaiBV.sd;
+
+lookup Thai.sdl {
+  sub @T by @T.sdl;
+} Thai.sdl;
+
+lookup Thai.sl {
+  sub @T by @T.sl;
+  sub @AV by @AV.sl;
+} Thai.sl;
+
+lookup Thai.su {
+  sub \uni0E4D by \uni0E4D.su;
+  sub \uni0E47 by \uni0E47.su;
+  sub @T.sd by @T;
+} Thai.su;
+
+lookup Thai.sul {
+  sub \uni0E4D by \uni0E4D.sul;
+  sub \uni0E47 by \uni0E47.sul;
+  sub @T.sdl by @T.sl;
+} Thai.sul;
+
+# This contextual `ccmp` feature aims to handle Thai complex layout without HarfBuzz.
+# Basically, it would work for various OpenType shaping engines (UniScribe, CoreText, Adobe World-Ready)
+# to support minority languages which require extra Tonemarks/Diacrtics.
+
+lookup ThaiContext.sl {
+  sub @AC' @BV' @BV' @AV' lookup Thai.sl;
+  sub @AC' @BV' @AV' lookup Thai.sl;
+  sub @AC' @AV' lookup Thai.sl;
+} ThaiContext.sl;
+
+lookup ThaiContext.sdl {
+  sub @AC' @BV' @BV @T' lookup Thai.sdl;
+  sub @AC' @BV' @T' lookup Thai.sdl;
+  sub @AC' @T' lookup Thai.sdl;
+} ThaiContext.sdl;
+
+# BoonTook consonants only
+lookup Thai.swap {
+  sub @NC.semi by @NC.swap;
+} Thai.swap;
+
+lookup ThaiContext.sd {
+  sub @NC.semi' lookup Thai.swap @BV' @BV' [ @AV @T ]' lookup Thai.sd;
+  sub @NC.semi' lookup Thai.swap @BV' [ @AV @T ]' lookup Thai.sd;
+  sub @NC.semi' lookup Thai.swap [ @AV @T ]' lookup Thai.sd;
+  sub [ @NC @DC @RC @RC.rd @BV.all ]' @T' lookup Thai.sd;
+  sub @DC' @BV' lookup ThaiBV.sd;
+} ThaiContext.sd;
+
+lookup ThaiContext.fallback {
+
+  # For @AC
+  sub [ @AV.sl @AV.sul @T.sl @T.sdl ] @AV' lookup Thai.sul;
+  sub [ @AV.sl @AV.sul @T.sl @T.sdl ] @T' lookup Thai.sl;
+
+  # For @NC @DC @RC @RC.rd
+  sub [ @AV @AV.su @T.sd @T ]' [ @AV @T ]' lookup Thai.su;
+
+  # For @BV
+  sub @BV.all' @T' lookup Thai.sd;
+
+  # For @T
+  sub @T.all [ @AV @T ]' lookup Thai.su;
+
+} ThaiContext.fallback;
+
+# Set them all here.
+feature ccmp {
+  lookup ThaiContext.sl;
+  lookup ThaiContext.sdl;
+  lookup ThaiContext.sd;
+  lookup ThaiContext.fallback;
+} ccmp;

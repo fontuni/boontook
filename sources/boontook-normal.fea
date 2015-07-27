@@ -1,7 +1,6 @@
 languagesystem DFLT dflt;
 languagesystem thai dflt;
-languagesystem thai PAL ;
-languagesystem thai SAN ;
+languagesystem latn dflt;
 
 #
 # Copyright (c) 2014-2015, Sungsit Sawaiwan (https://sungsit.com | gibbozer [at] gmail [dot] com).
@@ -11,28 +10,26 @@ languagesystem thai SAN ;
 # If not, see http://scripts.sil.org/OFL
 #
 
-# Do not reorder these included files unless you know what you do.
-
-
-# GDEF (classes)
-include(features/boontook-classes.fea)
+# Do not reorder these included files unless you know what you're doing.
 
 # GSUB
-include(features/boontook-core.fea)
-include(features/boontook.ccmp.fea)
-include(features/boontook-extra.fea)
 
-include(features/boontook-latin-core.fea)
-include(features/boontook-latin-extra.fea)
+# Thai
+include(features/thai-core.fea)
+include(features/thai-extra.fea)
+
+# Latin
+include(features/latin-core.fea)
+include(features/latin-extra.fea)
 
 # GPOS
 
 # Thai
-include(features/boontook.kern.fea)
-include(features/boontook.mark.fea)
-include(features/boontook.mkmk.fea)
+include(features/thai-normal.mark.fea)
+include(features/thai-normal.mkmk.fea)
+include(features/thai.kern.fea)
 
 # Latin
-include(features/boontook-latin-normal.mark.fea)
-include(features/boontook-latin-normal.mkmk.fea)
-include(features/boontook-latin.kern.fea)
+include(features/latin-normal.mark.fea)
+include(features/latin-normal.mkmk.fea)
+include(features/latin.kern.fea)

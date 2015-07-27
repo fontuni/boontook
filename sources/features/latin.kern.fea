@@ -6,7 +6,7 @@
 # If not, see http://scripts.sil.org/OFL
 #
 
-include(boontook-latin-classes.fea)
+include(latin-classes.fea)
 
 lookup Latin.kern {
   lookupflag 0;

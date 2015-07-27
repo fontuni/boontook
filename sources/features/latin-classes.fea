@@ -6,16 +6,7 @@
 # If not, see http://scripts.sil.org/OFL
 #
 
-@COMB.abv = [ \uni0300 - \uni0309 \uni030A - \uni030F \uni0311 - \uni0314 \uni0351 \uni0357 ];
-@COMB.blw = [ \uni0323 \uni0324 \uni0326 \uni0329 \uni032E \uni0331 ];
-@COMB = [ @COMB.abv @COMB.blw \uni031B \uni0327 \uni0328 ];
-@FRAC = [ \onequarter \onehalf \threequarters \onethird \twothirds \oneeighth \threeeighths \fiveeighths \seveneighths ];
-
-@LIGA = [ \ellipsis \fi \fl @FRAC ];
-
-#
 # Latin Pre-composed classes
-#
 
 # Latin vowels
 @A.abv = [ \Agrave \Aacute \Acircumflex \Atilde \Adieresis \Aring \Amacron \Abreve \uni01CD \uni1EA2 ];
@@ -48,9 +39,9 @@
 @I.blw = [ \Iogonek \uni1ECA ];
 @I = [ \I @I.abv @I.blw ];
 
-@i.abv = [ \i \igrave \iacute \icircumflex \idieresis \iogonek \itilde \imacron \uni01D0 \uni1EC9 ];
-@i.blw = [ \iogonek \uni1ECB ];
-@i = [ \dotlessi @i.abv @i.blw];
+@i.abv = [ \i \igrave \iacute \icircumflex \idieresis \itilde \imacron \uni01D0 \uni1EC9 ];
+@i.blw.abv = [ \iogonek \uni1ECB ];
+@i = [ \dotlessi @i.abv @i.blw.abv ];
 
 @O.base = [ \O \Oslash ];
 @O.abv = [ \Ograve \Oacute \Ocircumflex \Otilde \Odieresis \Omacron \Ohungarumlaut \uni01D1 \uni1ECE ];
@@ -130,10 +121,10 @@
 @f = [ \f @f.blw ];
 
 @G.abv = [ \Gcircumflex \Gbreve \Gdotaccent \Gcaron \uni1E20 ];
-@G.blw = [ \Gcommaaccent ];
+@G.blw = [ \uni0122 ];
 @G = [ \G @G.abv @G.blw ];
 
-@g.abv = [ \gcircumflex \gbreve \gdotaccent \gcommaaccent \gcaron \uni1E21 ];
+@g.abv = [ \gcircumflex \gbreve \gdotaccent \uni0123 \gcaron \uni1E21 ];
 @g = [ \g @g.abv ];
 
 @g.alt = [ \uni0261 ];
@@ -151,8 +142,8 @@
 @J.abv = [ \Jcircumflex ];
 @J = [ \J @J.abv ];
 
-@j.abv = [ \j \jcircumflex \uni031B ];
-@j = [ \uni031B @j.abv ];
+@j.abv = [ \j \jcircumflex ];
+@j = [ \uni0237 @j.abv ];
 
 @K.blw = [ \uni0136 ];
 @K = [ \K @K.blw ];
@@ -176,11 +167,11 @@
 @m.blw = [ \uni1E43 ];
 @m = [ \m @m.blw ];
 
-@N.abv = [ \Ntilde \Nacute \uni1E44 ];
+@N.abv = [ \Ntilde \Nacute \Ncaron \uni1E44 ];
 @N.blw = [ \uni0145 \uni1E46 \uni1E48 ];
 @N = [ \N @N.abv @N.blw ];
 
-@n.abv = [ \ntilde \nacute \uni1E45 ];
+@n.abv = [ \ntilde \nacute \ncaron \uni1E45 ];
 @n.blw = [ \uni0146 \uni1E47 \uni1E49 ];
 @n = [ \n @n.abv @n.blw ];
 
@@ -250,3 +241,15 @@
 
 @Schwa = [ \uni018F ];
 @schwa = [ \uni0259 ];
+
+@COMB.abv = [ \uni0300 - \uni0309 \uni030A - \uni030F \uni0311 - \uni0314 \uni0351 \uni0357 ];
+@COMB.blw = [ \uni0323 \uni0324 \uni0326 \uni0329 \uni032E \uni0331 ];
+@COMB = [ @COMB.abv @COMB.blw \uni031B \uni0327 \uni0328 ];
+@FRAC = [ \onequarter \onehalf \threequarters \onethird \twothirds \oneeighth \threeeighths \fiveeighths \seveneighths ];
+
+@LIGA = [ \i \j \ellipsis \fi \fl \Ohorn \ohorn \Uhorn \uhorn @FRAC ];
+
+# GDEF
+table GDEF {
+  GlyphClassDef , @LIGA, @COMB, ;
+} GDEF;

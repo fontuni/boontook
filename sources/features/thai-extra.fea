@@ -6,7 +6,7 @@
 # If not, see http://scripts.sil.org/OFL
 #
 
-include(boontook-classes.fea)
+include(thai-classes.fea)
 
 # These are optional required features for Thai fonts.
 
