@@ -131,13 +131,15 @@ lookup Thai.sul {
 # to support minority languages which require extra Tonemarks/Diacrtics.
 
 lookup ThaiContext.sl {
+  sub @AC' @BV' @BV' @BV' @AV' lookup Thai.sl;
   sub @AC' @BV' @BV' @AV' lookup Thai.sl;
   sub @AC' @BV' @AV' lookup Thai.sl;
   sub @AC' @AV' lookup Thai.sl;
 } ThaiContext.sl;
 
 lookup ThaiContext.sdl {
-  sub @AC' @BV' @BV @T' lookup Thai.sdl;
+  sub @AC' @BV' @BV' @BV' @T' lookup Thai.sdl;
+  sub @AC' @BV' @BV' @T' lookup Thai.sdl;
   sub @AC' @BV' @T' lookup Thai.sdl;
   sub @AC' @T' lookup Thai.sdl;
 } ThaiContext.sdl;
@@ -148,6 +150,7 @@ lookup Thai.swap {
 } Thai.swap;
 
 lookup ThaiContext.sd {
+  sub @NC.semi' lookup Thai.swap @BV' @BV' @BV' [ @AV @T ]' lookup Thai.sd;
   sub @NC.semi' lookup Thai.swap @BV' @BV' [ @AV @T ]' lookup Thai.sd;
   sub @NC.semi' lookup Thai.swap @BV' [ @AV @T ]' lookup Thai.sd;
   sub @NC.semi' lookup Thai.swap [ @AV @T ]' lookup Thai.sd;

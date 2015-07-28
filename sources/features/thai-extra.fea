@@ -42,3 +42,9 @@ feature dlig {
 lookup Thai.ss02 {
   sub @NC.semi by @NC.swap ;
 } Thai.ss02;
+
+feature ss02 {
+  script thai;
+    language dflt;
+      lookup Thai.ss02;
+} ss02;
