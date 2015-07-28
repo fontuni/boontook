@@ -61,7 +61,7 @@ lookup Latin.g.decomp {
   sub \gcircumflex by \uni0261 \uni0302;
   sub \gbreve by \uni0261 \uni0306;
   sub \gdotaccent by \uni0261 \uni0307;
-  sub \gcommaaccent by \uni0261 \uni0312;
+  sub \uni0123 by \uni0261 \uni0312;
   sub \gcaron by \uni0261 \uni030C;
   sub \uni1E21 by \uni0261 \uni0304;
   
