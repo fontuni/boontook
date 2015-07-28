@@ -38,10 +38,11 @@ for (var i = 0, len = texts.length; i<len; i++) {
   //console.log(texts[i].nodeValue);
 }
 
-function fontOption(){
+// Font switcher
+function fontSelector(){
   fontselector = document.getElementById('font-selector');
   fontcanvas = document.getElementsByTagName('body')[0];
-  fontid = fontselector.options[fontselector.selectedIndex].value;
+  fontclass = fontselector.options[fontselector.selectedIndex].value;
   fontcanvas.className = '';
-  fontcanvas.className = fontid;
+  fontcanvas.className = fontclass;
 }
