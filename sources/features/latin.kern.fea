@@ -11,7 +11,7 @@ include(latin-classes.fea)
 lookup Latin.kern {
   lookupflag 0;
     @kc21_first_1 = [ @A ];
-    @kc21_first_2 = [ \zero \eight \nine @B @D @O @Q ];
+    @kc21_first_2 = [ \zero \eight \nine @B @D @O @Q @SS @Schwa ];
     @kc21_first_3 = [ @C ];
     @kc21_first_4 = [ @H @I @M @N ];
     @kc21_first_5 = [ @F ];
@@ -24,8 +24,8 @@ lookup Latin.kern {
     @kc21_first_12 = [ @T ];
     @kc21_first_13 = [ @V @W ];
     @kc21_first_14 = [ @Y ];
-    @kc21_first_15 = [ @a @g @q @u \uni0251 \uni0261 ];
-    @kc21_first_16 = [ @b @e @o @p ];
+    @kc21_first_15 = [ @a @g @q @u @a.alt @g.alt ];
+    @kc21_first_16 = [ @b @e @o @p @ae @thorn @schwa ];
     @kc21_first_17 = [ \plus \hyphen \less \equal \greater \asciitilde \endash \emdash \bullet ];
     @kc21_first_18 = [ \parenleft \bracketleft \braceleft ];
     @kc21_first_19 = [ \backslash ];
@@ -44,17 +44,17 @@ lookup Latin.kern {
     @kc21_first_32 = [ @t ];
     @kc21_first_33 = [ @z ];
     @kc21_first_34 = [ @v @w @y ];
-    @kc21_second_1 = [ @A ];
-    @kc21_second_2 = [ @B @D @E @F @H @I @K @L @M @N @P @R ];
-    @kc21_second_3 = [ \zero \eight \nine @C @G @O @Q @Ohorn ];
+    @kc21_second_1 = [ @A @AE ];
+    @kc21_second_2 = [ @B @D @E @F @H @I @K @L @M @N @P @R @Thorn ];
+    @kc21_second_3 = [ \zero \eight \nine @C @G @O @Q @Ohorn @OE @Schwa ];
     @kc21_second_4 = [ @J ];
     @kc21_second_5 = [ @S ];
     @kc21_second_6 = [ @T ];
-    @kc21_second_7 = [ @U @Uhorn];
+    @kc21_second_7 = [ @U @Uhorn ];
     @kc21_second_8 = [ @V @W ];
     @kc21_second_9 = [ @X ];
     @kc21_second_10 = [ @Y ];
-    @kc21_second_11 = [ @a @c @d @e @g @o @q \uni0251 \uni0261 @ohorn ];
+    @kc21_second_11 = [ @a @c @d @e @g @o @q @a.alt @g.alt @ohorn @schwa ];
     @kc21_second_12 = [ \quotedbl \quotesingle \asterisk \asciicircum \grave \quoteleft \quoteright \quotedblleft \quotedblright ];
     @kc21_second_13 = [ \plus \hyphen \less \equal \greater \asciitilde \endash \emdash \bullet ];
     @kc21_second_14 = [ \parenright \bracketright \braceright ];
@@ -94,8 +94,8 @@ lookup Latin.kern {
     pos @kc21_first_2 @kc21_second_25 -60;
     pos @kc21_first_2 @kc21_second_26 -10;
     pos @kc21_first_2 @kc21_second_28 -30;
-    pos @kc21_first_3 @kc21_second_3 -30;
-    pos @kc21_first_3 @kc21_second_11 -30;
+    pos @kc21_first_3 @kc21_second_3 -20;
+    pos @kc21_first_3 @kc21_second_11 -15;
     pos @kc21_first_4 @kc21_second_2 10;
     pos @kc21_first_4 @kc21_second_7 5;
     pos @kc21_first_4 @kc21_second_15 5;

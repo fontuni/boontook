@@ -14,7 +14,7 @@ import subprocess
 
 # Predifined vars
 family = 'BoonTook'
-version = '2.0-alpha2'
+version = '2.0-beta1'
 source = 'sources/boontook-master.sfd'
 weights = [950]
 layers = ['Normal', 'Normal Oblique', 'Mon', 'Mon Oblique']
