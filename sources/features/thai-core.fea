@@ -19,39 +19,52 @@ lookup ThaiContextRC.rd {
   sub @RC' lookup ThaiRC.rd @BV;
 } ThaiContextRC.rd;
 
-# Thai Sara Am decomposition: The extra zero-width joiner (@ZWJ) is required
-# to distinguish decomposed Sara AA from user's input one.
+# Thai Sara Am decomposition:
 lookup ThaiDecomp {
-  sub \uni0E33 by \uni0E4D @ZWJ \uni0E32;
+  sub \uni0E33 by \uni0E4D \uni0E32;
 } ThaiDecomp;
 
-lookup ThaiT.0E4D {
-  sub @T by \uni0E4D;
-} ThaiT.0E4D;
+lookup ThaiDecomp.sl {
+  sub \uni0E33 by \uni0E4D.sl \uni0E32;
+} ThaiDecomp.sl;
 
-lookup Thai0E4D.0E48 {
-  sub \uni0E4D by \uni0E48;
-} Thai0E4D.0E48;
+lookup ThaiContext.decomp {
+  sub [ @NC @NC.semi @NC.swap @AC @DC @RC @RC.rd ]' \uni0E33' lookup ThaiDecomp;
+  sub @AC' \uni0E33' lookup ThaiDecomp.sl;
+} ThaiContext.decomp;
 
-lookup Thai0E4D.0E49 {
-  sub \uni0E4D by \uni0E49;
-} Thai0E4D.0E49;
+lookup Thai0E33.0E32 {
+  sub \uni0E33 by \uni0E32;
+} Thai0E33.0E32;
 
-lookup Thai0E4D.0E4A {
-  sub \uni0E4D by \uni0E4A;
-} Thai0E4D.0E4A;
+lookup ThaiTone.0E4D {
+  sub \uni0E48 by \uni0E4D \uni0E48;
+  sub \uni0E49 by \uni0E4D \uni0E49;
+  sub \uni0E4A by \uni0E4D \uni0E4A;
+  sub \uni0E4B by \uni0E4D \uni0E4B;
+} ThaiTone.0E4D;
 
-lookup Thai0E4D.0E4B {
-  sub \uni0E4D by \uni0E4B;
-} Thai0E4D.0E4B;
+lookup ThaiContext.0E4D {
+  sub [ @NC @NC.semi @NC.swap @AC @DC @RC @RC.rd ]' @T' lookup ThaiTone.0E4D \uni0E33' lookup Thai0E33.0E32;
+} ThaiContext.0E4D;
 
-# Reorder Nikhahit (uni0E4D) & Tones
-lookup ThaiContext.ro {
-  sub \uni0E48' lookup ThaiT.0E4D \uni0E4D' lookup Thai0E4D.0E48 @ZWJ' \uni0E32';
-  sub \uni0E49' lookup ThaiT.0E4D \uni0E4D' lookup Thai0E4D.0E49 @ZWJ' \uni0E32';
-  sub \uni0E4A' lookup ThaiT.0E4D \uni0E4D' lookup Thai0E4D.0E4A @ZWJ' \uni0E32';
-  sub \uni0E4B' lookup ThaiT.0E4D \uni0E4D' lookup Thai0E4D.0E4B @ZWJ' \uni0E32';
-} ThaiContext.ro; 
+# Phinthu reordering fix for Uniscribe & Harfbuzz
+lookup ThaiBV.0E3A {
+  sub [ \uni0E38 \uni0E39 ] by \uni0E3A;
+} ThaiBV.0E3A;
+
+lookup Thai0E3A.0E38 {
+  sub [ \uni0E3A ] by [ \uni0E38 ];
+} Thai0E3A.0E38;
+
+lookup Thai0E3A.0E39 {
+  sub [ \uni0E3A ] by [ \uni0E39 ];
+} Thai0E3A.0E39;
+
+lookup ThaiPhinthu.ro {
+  sub @BASE' [ \uni0E38 ]' lookup ThaiBV.0E3A [ \uni0E3A ]' lookup Thai0E3A.0E38;
+  sub @BASE' [ \uni0E39 ]' lookup ThaiBV.0E3A [ \uni0E3A ]' lookup Thai0E3A.0E39;
+} ThaiPhinthu.ro;
 
 # GSUB features
 
@@ -70,25 +83,26 @@ feature ccmp {
   script thai;
     language dflt;
       lookup ThaiContextRC.rd;
-      lookup ThaiDecomp;
-      lookup ThaiContext.ro;  
+      lookup ThaiContext.decomp;
+      lookup ThaiContext.0E4D;
+      lookup ThaiPhinthu.ro;
     language PAL exclude_dflt;
       lookup ThaiRC.rd;
+      lookup ThaiContext.decomp;
+      lookup ThaiContext.0E4D;
+      lookup ThaiPhinthu.ro;
     language SAN exclude_dflt;
       lookup ThaiRC.rd;
+      lookup ThaiContext.decomp;
+      lookup ThaiContext.0E4D;
+      lookup ThaiPhinthu.ro;
 
 } ccmp;
+
 
 # Because many applications don't quite well support language specific features
 # like `locl` (or even `ccmp`) for Thai script, `salt` & `ss01` features are alternatives 
 # to Pali/Sanskrit prefered form of uni0E0D (ญ) and uni0E10 (ฐ).
-
-feature salt {
-  script thai;
-    language dflt ;
-      lookup ThaiRC.rd;
-} salt;
-
 feature ss01 {
   script thai;
     language dflt ;
@@ -131,17 +145,17 @@ lookup Thai.sul {
 # to support minority languages which require extra Tonemarks/Diacrtics.
 
 lookup ThaiContext.sl {
-  sub @AC' @BV' @BV' @BV' @AV' lookup Thai.sl;
-  sub @AC' @BV' @BV' @AV' lookup Thai.sl;
-  sub @AC' @BV' @AV' lookup Thai.sl;
-  sub @AC' @AV' lookup Thai.sl;
+  #sub @AC @BV' @BV' @BV' @AV' lookup Thai.sl;
+  sub @AC @BV' @BV' @AV' lookup Thai.sl;
+  sub @AC @BV' @AV' lookup Thai.sl;
+  sub @AC @AV' lookup Thai.sl;
 } ThaiContext.sl;
 
 lookup ThaiContext.sdl {
-  sub @AC' @BV' @BV' @BV' @T' lookup Thai.sdl;
-  sub @AC' @BV' @BV' @T' lookup Thai.sdl;
-  sub @AC' @BV' @T' lookup Thai.sdl;
-  sub @AC' @T' lookup Thai.sdl;
+  #sub @AC @BV' @BV' @BV' @T' lookup Thai.sdl;
+  sub @AC @BV' @BV' @T' lookup Thai.sdl;
+  sub @AC @BV' @T' lookup Thai.sdl;
+  sub @AC @T' lookup Thai.sdl;
 } ThaiContext.sdl;
 
 # BoonTook consonants only
@@ -150,19 +164,19 @@ lookup Thai.swap {
 } Thai.swap;
 
 lookup ThaiContext.sd {
-  sub @NC.semi' lookup Thai.swap @BV' @BV' @BV' [ @AV @T ]' lookup Thai.sd;
+  #sub @NC.semi' lookup Thai.swap @BV' @BV' @BV' [ @AV @T ]' lookup Thai.sd;
   sub @NC.semi' lookup Thai.swap @BV' @BV' [ @AV @T ]' lookup Thai.sd;
   sub @NC.semi' lookup Thai.swap @BV' [ @AV @T ]' lookup Thai.sd;
   sub @NC.semi' lookup Thai.swap [ @AV @T ]' lookup Thai.sd;
-  sub [ @NC @DC @RC @RC.rd @BV.all ]' @T' lookup Thai.sd;
-  sub @DC' @BV' lookup ThaiBV.sd;
+  sub [ @NC @DC @RC @RC.rd @BV.all ] @T' lookup Thai.sd;
+  sub @DC @BV' lookup ThaiBV.sd;
 } ThaiContext.sd;
 
 lookup ThaiContext.fallback {
 
   # For @AC
-  sub [ @AV.sl @AV.sul @T.sl @T.sdl ] @AV' lookup Thai.sul;
-  sub [ @AV.sl @AV.sul @T.sl @T.sdl ] @T' lookup Thai.sl;
+  sub [ @AV.sl @AV.sul @T.sl @T.sdl ]' @AV' lookup Thai.sul;
+  sub [ @AV.sl @AV.sul @T.sl @T.sdl ]' @T' lookup Thai.sl;
 
   # For @NC @DC @RC @RC.rd
   sub [ @AV @AV.su @T.sd @T ]' [ @AV @T ]' lookup Thai.su;
@@ -171,7 +185,7 @@ lookup ThaiContext.fallback {
   sub @BV.all' @T' lookup Thai.sd;
 
   # For @T
-  sub @T.all [ @AV @T ]' lookup Thai.su;
+  sub @T.all' [ @AV @T ]' lookup Thai.su;
 
 } ThaiContext.fallback;
 

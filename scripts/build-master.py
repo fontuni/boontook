@@ -120,14 +120,15 @@ def buildFont(source,family):
   style = 'Ultra'
   font.version = version
   font.copyright = copyright
+  font.save()
 
   if source.endswith('-roman.sfd'):
     font.italicangle = 0.0
+    font.mergeFeature(feature_dir + features[0] + '.fea')
     
   if source.endswith('-oblique.sfd'):
     font.italicangle = -9.0
-
-  font.save()
+    font.mergeFeature(feature_dir + features[1] + '.fea')
     
   # loop through each layer & save it as sfd files
   # then generate ttf, autohint & make woff + woff2
@@ -146,10 +147,9 @@ def buildFont(source,family):
         font.appendSFNTName('English (US)', 'SubFamily', '')
         font.appendSFNTName('English (US)', 'SubFamily', 'Oblique')
         font.appendSFNTName('English (US)', 'Preferred Styles', style + ' Oblique')
-        font.mergeFeature(feature_dir + features[1] + '.fea')
         font.fontname += '-Oblique'
         font.fullname += ' Oblique'
-
+        
     else:
       font.fontname = font.familyname.replace(' ','-')
       font.fullname = font.fontname.replace('-',' ')
@@ -161,7 +161,6 @@ def buildFont(source,family):
         font.appendSFNTName('English (US)', 'SubFamily', '')
         font.appendSFNTName('English (US)', 'SubFamily', 'Oblique')
         font.appendSFNTName('English (US)', 'Preferred Styles', style + ' Oblique')
-        font.mergeFeature(feature_dir + features[1] + '.fea')
         font.fontname += '-Oblique'
         font.fullname += ' Oblique'
   
