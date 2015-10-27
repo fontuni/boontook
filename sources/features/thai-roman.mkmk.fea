@@ -26,6 +26,8 @@ lookup ThaiExtendedAbove.mkmk {
   pos mark [ \uni0E4D ] <anchor 0 30> mark @ThaiExtendedAbove.mkmk;
   pos mark [ \uni0E47.su ] <anchor 0 280> mark @ThaiExtendedAbove.mkmk;
 
+  pos mark [ @T.nig ] <anchor -20 240> mark @ThaiExtendedAbove.mkmk;
+
 } ThaiExtendedAbove.mkmk;
 
 lookup ThaiExtendedAbove.left.mkmk {
@@ -44,6 +46,8 @@ lookup ThaiExtendedAbove.left.mkmk {
   pos mark [ \uni0E49.sdl \uni0E4A.sdl \uni0E4B.sdl ] <anchor -90 0> mark @ThaiExtendedAbove.left.mkmk;
   pos mark [ \uni0E4C.sl ] <anchor 45 210> mark @ThaiExtendedAbove.left.mkmk;
   pos mark [ \uni0E47.sul ] <anchor 0 280> mark @ThaiExtendedAbove.left.mkmk;
+
+  pos mark [ @T.nig.sl ] <anchor -60 240> mark @ThaiExtendedAbove.left.mkmk;
 
 } ThaiExtendedAbove.left.mkmk;
 
