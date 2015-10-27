@@ -6,24 +6,24 @@
  */
 @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
 @font-face {
-  font-family: "BoonTook";
-  src: url(../fonts/BoonTook.woff2) format("woff2"), url(../fonts/BoonTook.woff) format("woff"), url(../fonts/BoonTook.ttf) format("truetype");
-  font-weight: normal;
+  font-family: BoonTook;
+  src: url(../fonts/woff2/BoonTook.woff2) format("woff2"), url(../fonts/woff/BoonTook.woff) format("woff"), url(../fonts/ttf/BoonTook.ttf) format("truetype");
+  font-weight: 400;
   font-style: normal; }
 @font-face {
-  font-family: "BoonTook";
-  src: url(../fonts/BoonTook-Oblique.woff2) format("woff2"), url(../fonts/BoonTook-Oblique.woff) format("woff"), url(../fonts/BoonTook-Oblique.ttf) format("truetype");
-  font-weight: normal;
+  font-family: BoonTook;
+  src: url(../fonts/woff2/BoonTook-Oblique.woff2) format("woff2"), url(../fonts/woff/BoonTook-Oblique.woff) format("woff"), url(../fonts/ttf/BoonTook-Oblique.ttf) format("truetype");
+  font-weight: 400;
   font-style: oblique; }
 @font-face {
-  font-family: "BoonTook Mon";
-  src: url(../fonts/BoonTook-Mon.woff2) format("woff2"), url(../fonts/BoonTook-Mon.woff) format("woff"), url(../fonts/BoonTook-Mon.ttf) format("truetype");
-  font-weight: normal;
+  font-family: BoonTook Mon;
+  src: url(../fonts/woff2/BoonTook-Mon.woff2) format("woff2"), url(../fonts/woff/BoonTook-Mon.woff) format("woff"), url(../fonts/ttf/BoonTook-Mon.ttf) format("truetype");
+  font-weight: 400;
   font-style: normal; }
 @font-face {
-  font-family: "BoonTook Mon";
-  src: url(../fonts/BoonTook-Mon-Oblique.woff2) format("woff2"), url(../fonts/BoonTook-Mon-Oblique.woff) format("woff"), url(../fonts/BoonTook-Mon-Oblique.ttf) format("truetype");
-  font-weight: normal;
+  font-family: BoonTook Mon;
+  src: url(../fonts/woff2/BoonTook-Mon-Oblique.woff2) format("woff2"), url(../fonts/woff/BoonTook-Mon-Oblique.woff) format("woff"), url(../fonts/ttf/BoonTook-Mon-Oblique.ttf) format("truetype");
+  font-weight: 400;
   font-style: oblique; }
 section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6 {
   color: #fff; }

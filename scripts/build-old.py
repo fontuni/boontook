@@ -42,15 +42,31 @@ def ttfHint(unhinted,hinted):
     'ttfautohint',
     '--default-script=thai',
     '--fallback-script=latn',
-    '--strong-stem-width=gGD',
-    '--hinting-range-min=8',
-    '--hinting-range-max=50',
-    '--hinting-limit=200',
-    '--increase-x-height=12',
+    '--strong-stem-width=G',
+    '--hinting-range-min=7',
+    '--hinting-range-max=28',
+    '--hinting-limit=50',
+    '--increase-x-height=13',
     '--no-info',
     '--verbose',
     unhinted,
     hinted
+  ])
+
+# Optimize
+def fontOptimize(fontfile):
+  subprocess.call([
+    'pyftsubset',
+    fontfile,
+    '--glyphs=*',
+    '--layout-features=*',
+    '--name-IDs=*',
+    '--hinting',
+    '--legacy-kern',
+    '--notdef-outline',
+    '--no-subset-tables+=DSIG',
+    '--drop-tables-=DSIG',
+    '--output-file=' + fontfile
   ])
 
 def ttf2Woff(ttf,woff,genflags):
@@ -58,6 +74,23 @@ def ttf2Woff(ttf,woff,genflags):
   font.generate(woff, flags=genflags)
   font.close()
 
+def fontPath(ext,name):
+  path = build_dir + ext
+  if not os.path.exists(path):
+    os.makedirs(path)
+  fontfile = path + '/' + name + '.' + ext
+  return fontfile
+
+def otf2Sfd(otf,sfd_dir):
+  font = fontforge.open(otf)
+  sfd = sfd_dir + font.fontname + '.sfd'
+  if not os.path.exists(sfd_dir):
+    os.makedirs(sfd_dir)
+  font.appendSFNTName('English (US)', 'UniqueID', '')
+  font.save(sfd)
+  print(font.fontname, 'SFD files saved.')
+  font.close()
+  
 def buildFont(source,family):
 
   # prepare master

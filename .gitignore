@@ -24,9 +24,18 @@ tests
 
 # FontForge
 *.sfd-*
-*.svg
 *bak*
 sources/*.*tf
 *temp*
 fonts/unhinted/*
 .sass-cache/*
+*backup/*
+*.sfd-*
+*/unhinted/*
+*-temp*
+*-backup*
+*.bak
+
+# Package
+BoonTook-v*.zip
+sfd/*
