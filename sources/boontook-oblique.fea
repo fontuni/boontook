@@ -19,12 +19,12 @@ languagesystem thai SAN ;
 # GSUB
 
 # Thai
-include(features/thai-core.fea)
 include(features/thai-extra.fea)
+include(features/thai-core.fea)
 
 # Latin
-include(features/latin-core.fea)
 include(features/latin-extra.fea)
+include(features/latin-core.fea)
 
 # GPOS
 

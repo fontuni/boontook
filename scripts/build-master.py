@@ -18,7 +18,7 @@ import datetime
 # Predifined vars
 foundry = 'FontUni'
 family = 'BoonTook'
-version = '2.0-beta1'
+version = '2.0-beta2'
 weights = [950]
 sources = ['sources/boontook-roman.sfd','sources/boontook-oblique.sfd']
 layers = ['Normal', 'Mon']
