@@ -1,0 +1,37 @@
+// Theme-specific fonts
+@mixin font-include($family, $name, $weight, $style) {
+  font-family: $family;
+  src: url(../fonts/woff2/#{$name}.woff2) format('woff2'),
+       url(../fonts/woff/#{$name}.woff) format('woff'),
+       url(../fonts/ttf/#{$name}.ttf) format('truetype');
+  font-weight: $weight;
+  font-style: $style;
+}
+
+@font-face {
+  @include font-include("BoonTook", BoonTook, 400, normal);
+}
+@font-face {
+  @include font-include("BoonTook", BoonTook-Oblique, 400, oblique);
+}
+
+@font-face {
+  @include font-include("BoonTook Mon", BoonTook-Mon, 400, normal);
+}
+@font-face {
+  @include font-include("BoonTook Mon", BoonTook-Mon-Oblique, 400, oblique);
+}
+
+// Font options
+@mixin font-class($family, $style) {
+  font-family: $family;
+  font-weight: 400;
+  font-style: $style;
+}
+
+.boontook { @include font-class("BoonTook", normal); }
+.boontook-oblique { @include font-class("BoonTook", oblique); }
+.boontook-mon { @include font-class("BoonTook Mon", normal); }
+.boontook-mon-oblique { @include font-class("BoonTook Mon", oblique); }
+
+

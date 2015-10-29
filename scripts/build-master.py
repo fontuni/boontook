@@ -18,7 +18,7 @@ import datetime
 # Predifined vars
 foundry = 'FontUni'
 family = 'BoonTook'
-version = '2.0-beta2'
+version = '2.0'
 weights = [950]
 sources = ['sources/boontook-roman.sfd','sources/boontook-oblique.sfd']
 layers = ['Normal', 'Mon']
@@ -139,9 +139,11 @@ def buildFont(source,family):
       font.fontname = font.familyname.replace(' ','-')
       font.fullname = font.fontname.replace('-',' ')
       style = 'Mon Ultra'
+      font.appendSFNTName('English (US)', 'Preferred Family', family + ' Mon')
       font.appendSFNTName('English (US)', 'SubFamily', '')
       font.appendSFNTName('English (US)', 'SubFamily', 'Regular')
       font.appendSFNTName('English (US)', 'Preferred Styles', style)
+      font.appendSFNTName('English (US)', 'Compatible Full', family)
 
       if source.endswith('-oblique.sfd'):
         font.appendSFNTName('English (US)', 'SubFamily', '')
@@ -156,6 +158,7 @@ def buildFont(source,family):
       font.appendSFNTName('English (US)', 'SubFamily', '')
       font.appendSFNTName('English (US)', 'SubFamily', 'Regular')
       font.appendSFNTName('English (US)', 'Preferred Styles', style)
+      font.appendSFNTName('English (US)', 'Compatible Full', family + ' Mon')
       
       if source.endswith('-oblique.sfd'):
         font.appendSFNTName('English (US)', 'SubFamily', '')

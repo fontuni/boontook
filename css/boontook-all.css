@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "BoonTook";
+  src: url(../fonts/woff2/BoonTook.woff2) format("woff2"), url(../fonts/woff/BoonTook.woff) format("woff"), url(../fonts/ttf/BoonTook.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: "BoonTook";
+  src: url(../fonts/woff2/BoonTook-Oblique.woff2) format("woff2"), url(../fonts/woff/BoonTook-Oblique.woff) format("woff"), url(../fonts/ttf/BoonTook-Oblique.ttf) format("truetype");
+  font-weight: 400;
+  font-style: oblique; }
+@font-face {
+  font-family: "BoonTook Mon";
+  src: url(../fonts/woff2/BoonTook-Mon.woff2) format("woff2"), url(../fonts/woff/BoonTook-Mon.woff) format("woff"), url(../fonts/ttf/BoonTook-Mon.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: "BoonTook Mon";
+  src: url(../fonts/woff2/BoonTook-Mon-Oblique.woff2) format("woff2"), url(../fonts/woff/BoonTook-Mon-Oblique.woff) format("woff"), url(../fonts/ttf/BoonTook-Mon-Oblique.ttf) format("truetype");
+  font-weight: 400;
+  font-style: oblique; }
+.boontook {
+  font-family: "BoonTook";
+  font-weight: 400;
+  font-style: normal; }
+
+.boontook-oblique {
+  font-family: "BoonTook";
+  font-weight: 400;
+  font-style: oblique; }
+
+.boontook-mon {
+  font-family: "BoonTook Mon";
+  font-weight: 400;
+  font-style: normal; }
+
+.boontook-mon-oblique {
+  font-family: "BoonTook Mon";
+  font-weight: 400;
+  font-style: oblique; }
+
+/*# sourceMappingURL=boontook-all.css.map */
