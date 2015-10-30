@@ -27,7 +27,7 @@ css: "/boontook/css/boontook-all.css"
 -----
 
 
-### ๏ ความเปลี่ยนแปลงในแต่ละเวอร์ขั่น
+### ๏ ความเปลี่ยนแปลงในแต่ละเวอร์ชั่น
 {: .boontook-mon}
 
 คุณสามารถอ่านได้จาก [FONTLOG](FONTLOG.html)
