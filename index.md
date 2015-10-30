@@ -51,5 +51,5 @@ css: "/boontook/css/boontook-all.css"
 ### ๏ แจ้งปัญหาการใช้งาน
 {: .boontook-mon}
 
-หากคุณพบปัญหาในการใช้งานฟอนต์บุญก็สามารถแจ้งกันเข้ามาได้ที่ <https://github.com/fontuni/boontook/issues> หรือพูดคุยอย่างกันเป็นเองที่ [ชุมชนสาวก f0nt](http://www.f0nt.com/forum/index.php/topic,21990.0.html) **ขอขอบคุณ สาวก f0nt ทุกท่านที่ให้ความเห็นและช่วยทดสอบฟอนต์บุญไว้ ณ ที่นี่ด้วยครับ** ([หน้าปล่อยฟอนต์เริ่มแรก](http://www.f0nt.com/release/boontook/) ก็อยู่ใน f0nt.com นั่นเองครับ)
+หากคุณพบปัญหาในการใช้งานฟอนต์บุญถึกก็สามารถแจ้งกันเข้ามาได้ที่ <https://github.com/fontuni/boontook/issues> หรือพูดคุยอย่างกันเป็นเองที่ [ชุมชนสาวก f0nt](http://www.f0nt.com/forum/index.php/topic,21990.0.html) **ขอขอบคุณ สาวก f0nt ทุกท่านที่ให้ความเห็นและช่วยทดสอบฟอนต์บุญถึกไว้ ณ ที่นี่ด้วยครับ** ([หน้าปล่อยฟอนต์เริ่มแรก](http://www.f0nt.com/release/boontook/) ก็อยู่ใน f0nt.com นั่นเองครับ)
 

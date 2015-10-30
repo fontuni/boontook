@@ -10,6 +10,7 @@ css: "/boontook/css/boontook-all.css"
 
 - Covered Pan-European & Vietnamese (Adobe Latin-4)
 - Added new Thai core feature framework (fontuni)
+- Hinted by [ttfautohint v1.4.1](http://www.freetype.org/ttfautohint/) (Thai & Lao script support)
 
 ### BoonTook v1.0, 2014-11-11
 {: .boontook-mon}
