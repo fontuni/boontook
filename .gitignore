@@ -28,6 +28,8 @@ tests
 sources/*.*tf
 *temp*
 fonts/unhinted/*
+fonts/eot/*
+fonts/svg/*
 .sass-cache/*
 *backup/*
 *.sfd-*
