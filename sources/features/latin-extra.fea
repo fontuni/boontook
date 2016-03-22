@@ -166,3 +166,10 @@ feature frac {
 } frac;
 
 # To-do: kerning numr fraction dnom
+
+feature liga {
+  lookup FontUni.logo {
+    sub f o n t u n i period l o g o by FontUni;
+    sub F o n t U n i period l o g o by FontUni;
+  } FontUni.logo;
+} liga;
