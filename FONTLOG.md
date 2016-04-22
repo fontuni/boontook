@@ -5,6 +5,9 @@ title: BoonTook FONTLOG
 titleclass: "boontook-mon"
 theme: /css/theme-boontook.css
 css: "/boontook/css/boontook-all.css"
+cover:
+  path: /boontook/images/boontook-cover.png
+excerpt: "BoonTook FONTLOG"
 ---
 
 ### BoonTook v2.0.1, 2015-12-02
