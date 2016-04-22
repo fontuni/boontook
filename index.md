@@ -8,12 +8,14 @@ theme: /css/theme-boontook.css
 thumbnail: /boontook/images/thumbnail.svg
 date: Dec 2, 2015
 color: "#f60"
+cover:
+  path: /boontook/images/boontook-cover.png
 ---
 
 ![BoonTook Banner](images/banner.svg)
 {: .banner}
 
-**บุญถึก** เป็นฟอนต์ตระกูลหนาน้ำหนักเดียวแต่มี 4 สไตล์ คือ บุญถึกตรง, บุญถึงเอน, บุญถึกมน และ บุญถึกมนเอน ชื่อฟอนต์คงบ่งบอกบุคลิกได้ดีโดยไม่ต้องบรรยาย ถึงแม้ตัวจะหนาแต่ก็ดูไม่มีพิษมีภัย เปรียบเทียบได้กับตัวละคร **Hodor** ใน Game of Thrones หรือ **Lennie Small** ในนิยาย Of Mice and Men ของ John Steinbeck และ <strong class="boontook-mon">fontuni.logo ฟอนต์อยู่นี่</strong> ก็ใช้บุญถึกในโลโก้นั่นเอง
+**บุญถึก** เป็นฟอนต์ตระกูลหนาน้ำหนักเดียวแต่มี 4 สไตล์ คือ บุญถึกตรง, บุญถึกเอน, บุญถึกมน และ บุญถึกมนเอน ชื่อฟอนต์คงบ่งบอกบุคลิกได้ดีโดยไม่ต้องบรรยาย ถึงแม้ตัวจะหนาแต่ก็ดูไม่มีพิษมีภัย เปรียบเทียบได้กับตัวละคร **Hodor** ใน Game of Thrones หรือ **Lennie Small** ในนิยาย Of Mice and Men ของ John Steinbeck <!--more--> และ <strong class="boontook-mon">fontuni.logo ฟอนต์อยู่นี่</strong> ก็ใช้บุญถึกในโลโก้นั่นเอง
 
 -----
 
