@@ -1,43 +1,33 @@
-# Ignore OS generated files #
-.DS_Store*
-ehthumbs.db
-Icon?
-Thumbs.db
-
-# Always-ignore files and folders #
-*.diff
-*.err
+*.tar
+*.tar.*
+*.zip
+*.tgz
 *.log
-*.orig
-*.rej
-*.swn
-*.swo
-*.swp
-._*
-*~
+*.log.*
+*.sig
+pkg/
+src/
 
-# NPM & Bower
-node_modules
-bower_components
-test
-tests
-
-# FontForge
 *.sfd-*
-*bak*
+notes.txt
+*-temp*
 sources/*.*tf
-*temp*
+*/bak/*
 fonts/unhinted/*
 fonts/eot/*
 fonts/svg/*
 .sass-cache/*
+__pycache*
+*.pyc
+
 *backup/*
 *.sfd-*
 */unhinted/*
 *-temp*
 *-backup*
 *.bak
+*-bak*
 
 # Package
-BoonTook-v*.zip
 sfd/*
+*-v*.zip
