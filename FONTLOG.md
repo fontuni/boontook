@@ -10,6 +10,14 @@ cover:
 excerpt: "BoonTook FONTLOG"
 ---
 
+### BoonTook v3.0, 2017-02-05
+{: .section-title }
+
+- Added new building process
+- Used generic names for all fonts
+- Corrected OS/2 Style Map for Windows
+- Removed EOT & SVG font packages
+
 ### BoonTook v2.0.1, 2015-12-02
 {: .section-title }
 

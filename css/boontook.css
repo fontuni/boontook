@@ -6,25 +6,25 @@
  */
 @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
 @font-face {
-  font-family: BoonTook;
-  src: url(../fonts/woff2/BoonTook.woff2) format("woff2"), url(../fonts/woff/BoonTook.woff) format("woff"), url(../fonts/ttf/BoonTook.ttf) format("truetype");
+  font-family: "BoonTook";
+  src: url(../fonts/woff2-otf/BoonTook-Regular.woff2) format("woff2"), url(../fonts/woff-otf/BoonTook-Regular.woff) format("woff"), url(../fonts/otf/BoonTook-Regular.ttf) format("truetype");
   font-weight: 400;
   font-style: normal; }
 @font-face {
-  font-family: BoonTook;
-  src: url(../fonts/woff2/BoonTook-Oblique.woff2) format("woff2"), url(../fonts/woff/BoonTook-Oblique.woff) format("woff"), url(../fonts/ttf/BoonTook-Oblique.ttf) format("truetype");
+  font-family: "BoonTook";
+  src: url(../fonts/woff2-otf/BoonTook-Italic.woff2) format("woff2"), url(../fonts/woff-otf/BoonTook-Italic.woff) format("woff"), url(../fonts/otf/BoonTook-Italic.ttf) format("truetype");
   font-weight: 400;
-  font-style: oblique; }
+  font-style: italic; }
 @font-face {
-  font-family: BoonTook Mon;
-  src: url(../fonts/woff2/BoonTook-Mon.woff2) format("woff2"), url(../fonts/woff/BoonTook-Mon.woff) format("woff"), url(../fonts/ttf/BoonTook-Mon.ttf) format("truetype");
+  font-family: "BoonTook Mon";
+  src: url(../fonts/woff2-otf/BoonTookMon-Regular.woff2) format("woff2"), url(../fonts/woff-otf/BoonTookMon-Regular.woff) format("woff"), url(../fonts/otf/BoonTookMon-Regular.ttf) format("truetype");
   font-weight: 400;
   font-style: normal; }
 @font-face {
-  font-family: BoonTook Mon;
-  src: url(../fonts/woff2/BoonTook-Mon-Oblique.woff2) format("woff2"), url(../fonts/woff/BoonTook-Mon-Oblique.woff) format("woff"), url(../fonts/ttf/BoonTook-Mon-Oblique.ttf) format("truetype");
+  font-family: "BoonTook Mon";
+  src: url(../fonts/woff2-otf/BoonTookMon-Italic.woff2) format("woff2"), url(../fonts/woff-otf/BoonTookMon-Italic.woff) format("woff"), url(../fonts/otf/BoonTookMon-Italic.ttf) format("truetype");
   font-weight: 400;
-  font-style: oblique; }
+  font-style: italic; }
 section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6 {
   color: #fff; }
 
